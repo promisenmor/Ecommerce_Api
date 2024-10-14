@@ -3,8 +3,8 @@ from . models import *
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
-        models = Product
-        fields = ['id', 'name', 'decription', 'price', 'stock', 'created_at']
+        model = Product
+        fields = ['id', 'name', 'description', 'price', 'stock', 'created_at']
 
 
 class CartItemSerializer(serializers.ModelSerializer):
